@@ -26,27 +26,27 @@ var cities = [{name:"Ahmedabad",population:7681000}, {name:"Alexandria",populati
 ]
 
 var cityPopulation = cities.map(cities=>cities.population)
-console.log(cities)
-console.log(cityPopulation)
 
 var cityNames = cities.map(cities=>cities.name)
-console.log(cityNames)
 
 let sortByPopulation = cities.sort((c2, c1) => (c2.population < c1.population) ? 1 : (c2.population > c1.population) ? -1 : 0);
-console.log(sortByPopulation);
+console.log(sortByPopulation); // SORT BY POPULATION
 
 var avgPopulation = cityPopulation.reduce(
     (acc,curr)=>(acc+curr)/cityPopulation.length
     )
     console.log(avgPopulation)
-
+ // AVG POPULATION
 
 let = topThreePopulated = () => {
     console.log(sortByPopulation.slice(0,3));
 }
 
-topThreePopulated()
+topThreePopulated() 
+
+//TOP THREE POPULATION
 
 let citiesA = cities.filter(cities => cities.name.startsWith('A') && cities.population > 1000000);
 
 console.log("Cities starting on A with a population bigger than 1 mil" ,citiesA.map(city=>city.name))
+// CITIES ON A + 1 MIL
