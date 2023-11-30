@@ -14,7 +14,6 @@ function createTable(array, caption){
 
     let firstRowObject = array[0]
 
-    //let keys = Object.keys(firstRowObject); ili Object.values(firstRowObjects) -> Kreira niza od vrednosti, vo ovoj slucaj keys.
     let firstRow = document.createElement("tr")
 
     for(key in firstRowObject) {
@@ -41,9 +40,8 @@ document.body.appendChild(table)
 createTable(books,"Books")
 
 function myDeleteFunction() {
-  }
-  document.querySelector('button').addEventListener('click', () => {
-    
-document.getElementById('myTable').deleteRow(1)
+    }
+    document.querySelector('button').addEventListener('click', () => {
+    document.getElementById('myTable').deleteRow(1)
 });
 }
